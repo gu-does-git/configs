@@ -1,0 +1,23 @@
+{
+	"editor.formatOnSave": true,
+	"editor.tabSize": 4,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true,
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true
+	},
+	"eslint.validate": [
+		"html",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"eslint.runtime": "/usr/bin/node",
+	"files.exclude": {
+		"node_modules/": true,
+		"packages/**/dist/": true,
+		"packages/**/node_modules/": true
+	}
+}

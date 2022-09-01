@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"eamodio.gitlens",
+		"stylelint.vscode-stylelint",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"streetsidesoftware.code-spell-checker",
+		"usernamehw.errorlens"
+	]
+}
