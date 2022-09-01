@@ -1,9 +1,0 @@
-{
-	"extends": [
-		"airbnb-base",
-		"adjunct"
-	],
-	"rules": {
-		"prefer-const": "off"
-	}
-}
