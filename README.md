@@ -6,7 +6,9 @@ This repo is separated by [branches](/branches), so that I can have different co
 
 ## How to use
 
-1. Install all the npm dependencies.
+0. Clone the desired [branch](/branches) and open it in VSCode.
+
+1. Open a terminal inside VSCode and install all the node dependencies.
 
 ```shell
  npm i
