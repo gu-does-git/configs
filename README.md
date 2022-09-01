@@ -23,4 +23,4 @@ This repo is separated by [branches](https://github.com/gu-does-git/configs/bran
 -   [Stylelint](https://github.com/stylelint/awesome-stylelint)
     > I use it to sniff out errors and such on my CSS and SCSS files.
 -   [Prettier](https://prettier.io/)
--   > I use it to enforce an consistent format into all of my files.
+    > I use it to enforce an consistent format into all of my files.
