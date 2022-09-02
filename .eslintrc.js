@@ -2,11 +2,12 @@ module.exports = {
     env: {
         browser: true
     },
-    extends: ['eslint:recommended'],
+    extends: ['eslint:recommended', 'plugin:lodash/recommended', 'adjunct'],
     parserOptions: {
-        ecmaVersion: 5
+        ecmaVersion: 2015
     },
-    plugins: ['servicenow', 'angular', '@html-eslint'],
+    plugins: ['servicenow', 'angular', '@html-eslint', 'disable'],
+    processor: 'disable/disable',
     globals: {
         jQuery: true,
         $: true,
@@ -39,7 +40,16 @@ module.exports = {
         // https://github.com/EmmanuelDemey/eslint-plugin-angular
         'angular/angularelement': 2,
         'angular/interval-service': 2,
-        'angular/window-service': 2
+        'angular/window-service': 2,
+
+        // adjunct overrides
+        'sonarjs/cognitive-complexity': 'off',
+        'sonarjs/no-inverted-boolean-check': 'error',
+        'unicorn/no-this-assignment': 'off',
+        'unicorn/prefer-top-level-await': 'off',
+        'promise/catch-or-return': 'off',
+        'promise/always-return': 'off',
+        'security/detect-non-literal-fs-filename': 'off'
     },
     overrides: [
         {
@@ -69,6 +79,12 @@ module.exports = {
             rules: {
                 // regras do Link function
                 'no-unused-vars': 'off'
+            }
+        },
+        {
+            files: ['*Server Script.js'],
+            settings: {
+                'disable/plugins': ['lodash']
             }
         }
     ]
