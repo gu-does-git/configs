@@ -12,10 +12,17 @@ This repo is separated by [branches](https://github.com/gu-does-git/configs/bran
 
 0. Clone the desired [branch](https://github.com/gu-does-git/configs/branches) and open it in VSCode.
 
+```properties
+git clone https://github.com/gu-does-git/configs.git
+cd configs
+git branch -a
+git checkout {{selected branch}}
+```
+
 1. Open a terminal inside VSCode and install all the node dependencies.
 
-```shell
- npm i
+```properties
+npm install
 ```
 
 2. Install all the [recommended extensions](https://code.visualstudio.com/docs/editor/extension-marketplace#_recommended-extensions) into VSCode.
